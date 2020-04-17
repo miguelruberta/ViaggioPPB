@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/payment_method">
+
+    <ImageView
+        android:layout_marginTop="-80dp"
+        android:src="@drawable/background"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="12dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:fontFamily="@font/buletto"
+            android:text="Payment"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="130dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/rounded_button">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/buletto"
+            android:text="@string/passport_number"
+            android:textSize="23dp" />
+
+        <Spinner
+            android:id="@+id/spinner_payment"
+            android:layout_width="420dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginHorizontal="20dp"
+            android:entries="@array/payment_method"
+            android:prompt="@string/payment_prompt"/>
+
+        <TextView
+            android:id="@+id/payment_how"
+            android:layout_width="420sp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="120dp"
+            android:text="Choose Payment Method"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/payment_purchase"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="480dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_black_button"
+            android:fontFamily="@font/futura"
+            android:text="BOOK NOW"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+</RelativeLayout>
